@@ -72,12 +72,14 @@ table th {
 }
 
 .actions {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     white-space: nowrap;
 }
 
 .actions button {
-    margin: 0 5px;
+    margin: 5px;
     padding: 5px 10px;
 }
 
@@ -94,12 +96,6 @@ table th {
 
     table th, table td {
         padding: 8px;
-    }
-
-    .actions button {
-        display: block;
-        margin: 5px 0;
-        width: 100%;
     }
 
     .notes {
@@ -142,7 +138,8 @@ table th {
     }
 
     .actions button {
-        display: inline-block;
-        margin: 5px 2px;
+        display: block;
+        margin: 5px auto;
+        width: 90%;
     }
 }
