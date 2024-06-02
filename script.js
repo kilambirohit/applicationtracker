@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const newRow = applicationsTable.insertRow();
 
         newRow.innerHTML = `
-            <td>${application.university}</td>
-            <td>${application.program}</td>
-            <td class="status">${application.status}</td>
-            <td>${application.applicationDate}</td>
-            <td class="notes">${application.notes}</td>
+            <td data-label="University">${application.university}</td>
+            <td data-label="Program">${application.program}</td>
+            <td data-label="Status" class="status">${application.status}</td>
+            <td data-label="Application Date">${application.applicationDate}</td>
+            <td data-label="Notes" class="notes">${application.notes}</td>
             <td class="actions">
                 <button class="update-status">Update Status</button>
                 <button class="update-notes">Update Notes</button>
