@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Manager</h1>
+        
+        <form id="applicationForm">
+            <div class="form-group">
+                <label for="university">University:</label>
+                <input type="text" id="university" required>
+            </div>
+            <div class="form-group">
+                <label for="program">Program:</label>
+                <input type="text" id="program" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <input type="text" id="status" required>
+            </div>
+            <div class="form-group">
+                <label for="applicationDate">Application Date:</label>
+                <input type="date" id="applicationDate" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" rows="3"></textarea>
+            </div>
+            <button type="submit">Add Application</button>
+        </form>
+
+        <table id="applicationsTable">
+            <thead>
+                <tr>
+                    <th>University</th>
+                    <th>Program</th>
+                    <th>Status</th>
+                    <th>Application Date</th>
+                    <th>Notes</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Applications will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
