@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Manager</title>
+    <title>Application Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Application Manager</h1>
-        
+        <h1>Application Tracker</h1>
         <form id="applicationForm">
             <div class="form-group">
                 <label for="university">University:</label>
@@ -29,11 +28,10 @@
             </div>
             <div class="form-group">
                 <label for="notes">Notes:</label>
-                <textarea id="notes" rows="3"></textarea>
+                <textarea id="notes" rows="4"></textarea>
             </div>
             <button type="submit">Add Application</button>
         </form>
-
         <table id="applicationsTable">
             <thead>
                 <tr>
@@ -46,11 +44,10 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Applications will be dynamically added here -->
+                <!-- Application rows will be added here dynamically -->
             </tbody>
         </table>
     </div>
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
